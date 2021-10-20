@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="an">
+<button onclick="baby()">nhan nhanh đe</button>
+<p id="result"></p>
+<script>
+    function baby() {
+        let number = [2, -5, 10, 22, -14, 7, 34, 23, -54, 9, -12, 33, 45, 59];
+        tinh = document.getElementById("an").value;
+        number.push(tinh);
+        for (let i = 0; i < number.length; i++) {
+            if (tinh % 1 === 0) {
+                document.getElementById("result").innerHTML = "V is in the array";
+            } else {
+                document.getElementById("result").innerHTML = "V is not in the array";
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

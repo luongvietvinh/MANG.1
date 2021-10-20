@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <input type="text" id="binhphuong" oninput="tinh()"/> is: <span id="result"></span>
+<script>
+    function ahihi (number) {
+        let nhan = number * number;
+        return nhan;
+    }
+    function tinh () {
+        let input = document.getElementById("binhphuong").value;
+        let result = ahihi(input);
+        document.getElementById("result").innerHTML = result;
+    }
+
+</script>
+</body>
+</html>

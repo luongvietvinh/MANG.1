@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="an">
+<button onclick="baby()">nhan nhanh đe</button>
+<script>
+    function baby() {
+        let number = [2, -5, 10, 22, -14, 7, 34, 23, -54, 9, -12, 33, 45, 59];
+        let number2 = document.getElementById("an").value;
+
+        for (let i = 0; i < number.length; i++) {
+            if (number2 === number.length[i]) {
+                number.splice(3, 2);
+                document.write(number.length[i])
+
+                // document.write(tinh.splice(number[i]) + number.push(0))
+            } else {
+                document.write(number[i])
+                i
+            }
+        }}
+
+</script>
+
+</body>
+</html>

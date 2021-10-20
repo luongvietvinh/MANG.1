@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<H1>TỪ ĐIỂN VIỆT NHẬT</H1>
+<hr>
+<input type="text" id="quatlamtu">
+<button value="timkiem" onclick="aridaphat()">dịch</button>
+<p id="result"></p>
+<script>
+    function aridaphat() {
+        let quatlamtu = document.getElementById("quatlamtu").value;
+        let nihongo = ["inu", "neko", "uma", "ushi", "ka", "wani", "tora", "raion"];
+        let vietname = ["chó", "mèo", "ngựa", "trâu", "muỗi", "cá xấu", "hổ", "sư tử"];
+            flag = true;
+        for (let i = 0; i < nihongo.length; i++) {
+            if (vietname[i] === quatlamtu){
+                document.getElementById("result").innerHTML = nihongo[i];
+                break;
+            }
+            if (nihongo[i] === quatlamtu){
+                flag = false;
+                document.getElementById("result").innerHTML = vietname[i];
+                break;
+            }
+            }
+            if (flag === true) {
+                document.getElementById("result").innerHTML = nihongo[i];
+            }
+            }
+
+</script>
+</body>
+</html>
